@@ -279,7 +279,9 @@ nav ul li a span {
    line-height: 16px;
    margin: 15px 0 52px;
 }
-
+img{
+   width: 100%;
+}
 .burger-img {
    position: relative;
    display: flex;
