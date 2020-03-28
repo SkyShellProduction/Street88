@@ -1,3 +1,5 @@
+let randomSoda = ['RC Cola', 'Coca Cola', 'Pepsi', 'Fanta', 'Sprite'],
+    randomJuice = ['Яблочный', 'Апельсиновый', 'Лимон-Мята', 'Вишневый', 'Горные ягоды', 'Мультифрукт', 'Гранатовый', 'Смородиновый'];
 let fastfood = {
     hamburger:{
         name: 'Гамбургер',
@@ -64,6 +66,162 @@ let fastfood = {
         amount: 0,
         price: 20000,
         kcall: 270,
+        get calcPrice(){
+            return this.amount * this.price;
+        },
+        get calcKcall (){
+            return this.amount * this.kcall
+        }
+    },
+    hotdog:{
+        name: 'Хотдог',
+        amount: 0,
+        price: 5000,
+        kcall: 150,
+        get calcPrice(){
+            return this.amount * this.price;
+        },
+        get calcKcall (){
+            return this.amount * this.kcall
+        }
+    },
+    hotdogcanada:{
+        name: 'Хотдог Канадский',
+        amount: 0,
+        price: 7000,
+        kcall: 170,
+        get calcPrice(){
+            return this.amount * this.price;
+        },
+        get calcKcall (){
+            return this.amount * this.kcall
+        }
+    },
+    hotdogroyal:{
+        name: 'Хотдог Королевский',
+        amount: 0,
+        price: 10000,
+        kcall: 190,
+        get calcPrice(){
+            return this.amount * this.price;
+        },
+        get calcKcall (){
+            return this.amount * this.kcall
+        }
+    },
+    pizzapepperoni:{
+        name: 'Пицца Пепперони',
+        amount: 0,
+        price: 40000,
+        kcall: 400,
+        get calcPrice(){
+            return this.amount * this.price;
+        },
+        get calcKcall (){
+            return this.amount * this.kcall
+        }
+    },
+    pizzadiabolo:{
+        name: 'Пицца Диаболо',
+        amount: 0,
+        price: 47000,
+        kcall: 450,
+        get calcPrice(){
+            return this.amount * this.price;
+        },
+        get calcKcall (){
+            return this.amount * this.kcall
+        }
+    },
+    pizzafourcheese:{
+        name: 'Пицца 4 Сыра',
+        amount: 0,
+        price: 45000,
+        kcall: 420,
+        get calcPrice(){
+            return this.amount * this.price;
+        },
+        get calcKcall (){
+            return this.amount * this.kcall
+        }
+    },
+    pizzahawaii:{
+        name: 'Пицца Гавайская',
+        amount: 0,
+        price: 48000,
+        kcall: 500,
+        get calcPrice(){
+            return this.amount * this.price;
+        },
+        get calcKcall (){
+            return this.amount * this.kcall
+        }
+    },
+    pizzavegan:{
+        name: 'Пицца Вегетарианская',
+        amount: 0,
+        price: 50000,
+        kcall: 350,
+        get calcPrice(){
+            return this.amount * this.price;
+        },
+        get calcKcall (){
+            return this.amount * this.kcall
+        }
+    },
+    pizzacombo:{
+        name: 'Пицца Комбо',
+        amount: 0,
+        price: 55000,
+        kcall: 600,
+        get calcPrice(){
+            return this.amount * this.price;
+        },
+        get calcKcall (){
+            return this.amount * this.kcall
+        }
+    },
+    colahalf:{
+        name: randomSoda[Math.floor(Math.random()*randomSoda.length)] + ' 0.5л',
+        amount: 0,
+        price: 5000,
+        kcall: 400,
+        get calcPrice(){
+            return this.amount * this.price;
+        },
+        get calcKcall (){
+            return this.amount * this.kcall
+        }
+    },
+    colaliter:{
+        name: randomSoda[Math.floor(Math.random()*randomSoda.length)] + ' 1л',
+        amount: 0,
+        price: 10000,
+        kcall: 600,
+        get calcPrice(){
+            return this.amount * this.price;
+        },
+        get calcKcall (){
+            return this.amount * this.kcall
+        }
+    },
+    colaliterandahalf:{
+        name: randomSoda[Math.floor(Math.random()*randomSoda.length)] + ' 1.5л',
+        amount: 0,
+        price: 15000,
+        kcall: 800,
+        get calcPrice(){
+            return this.amount * this.price;
+        },
+        get calcKcall (){
+            return this.amount * this.kcall
+        }
+    },
+    juice:{
+        name: randomJuice[Math.floor(Math.random()*randomSoda.length)] + ' 1л',
+        amount: 0,
+        price: 9000,
+        kcall: 200,
         get calcPrice(){
             return this.amount * this.price;
         },
@@ -195,3 +353,17 @@ for(let i in price){
 receiptBtn.addEventListener('click', function(){
     location.reload();
 })
+
+let mainNavLink = document.querySelectorAll('.main-nav__link'),
+    tabs = document.querySelectorAll('.tabs');
+for(let i = 0; i<mainNavLink.length; i++){
+        mainNavLink[i].addEventListener('click', function (e) { 
+            e.preventDefault();
+            for(let j=0; j < mainNavLink.length; j++){
+                mainNavLink[j].classList.remove('active');
+                tabs[j].classList.remove('active');
+            }
+            this.classList.add('active');
+            tabs[i].classList.add('active');
+         })
+    }

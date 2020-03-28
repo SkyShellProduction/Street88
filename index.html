@@ -14,12 +14,12 @@
    <header>
       <div class="receipt">
          <div class="receipt-out">
-            
+
          </div>
-         <button class="receipt-btn">Оплатить</button>
+         <button  class="receipt-btn">Оплатить</button>
       </div>
       <div class="container d-flex flex-column ">
-         <nav class="d-flex justify-content-between align-items-center">
+         <nav class="d-flex justify-content-between align-items-center header-nav ">
             <a href="" class="logo">street88</a>
             <input type="checkbox" id="check">
             <ul class="d-flex header__list">
@@ -35,7 +35,8 @@
          <div class="header-content d-flex flex-column flex-grow-1 justify-content-center align-items-start">
             <h1>Большой гамбургер</h1>
             <p>говядина</p>
-            <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета, сдобренная
+            <p class="burger__description">Свежая хрустящая булочка, листики салата, маринованный огурец с луком и
+               небольшая котлета, сдобренная
                майонезом и кетчупом, - таков классический портрет гамбургера, наиболее распространенной «быстрой» еды в
                США, от отравления которой ежедневно на больничных койках оказываются десятки тысяч американцев
             </p>
@@ -45,15 +46,15 @@
    </header>
    <main>
       <div class="menu">
-         <div class="container ">
-            <ul class="d-flex justify-content-start justify-content-md-around flex-sm-wrap">
-               <li><a href="" class="m-0">Гамбургеры</a></li>
-               <li><a href="" class="m-0">Хот доги</a></li>
-               <li><a href="" class="m-0">Пицца</a></li>
-               <li><a href="" class="m-0">Напитки</a></li>
-               <li><a href="" class="m-0">Соки</a></li>
+         <div class="container">
+            <ul class="d-flex justify-content-start justify-content-md-around flex-sm-wrap main-list">
+               <li><a href="" class="m-0 main-nav__link active">Гамбургеры</a></li>
+               <li><a href="" class="m-0 main-nav__link">Хот доги</a></li>
+               <li><a href="" class="m-0 main-nav__link">Пицца</a></li>
+               <li><a href="" class="m-0 main-nav__link">Напитки</a></li>
+               <li><a href="" class="m-0 main-nav__link">Соки</a></li>
             </ul>
-            <div class="row">
+            <div class="row tabs active">
                <div class="col-4 col-sm-12 col-md-6">
                   <div class="burger">
                      <div class="burger-img" id="hamburger">
@@ -68,26 +69,27 @@
                            <p class="price__span"><span>0</span> сум</p>
                            <div class="checkbox">
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="lettuce">
-                                  <span class="checkbox__span"></span>
-                                  Салатный лист
+                                 <input type="checkbox" class="check" data-extra="lettuce">
+                                 <span class="checkbox__span"></span>
+                                 Салатный лист
                               </label>
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="doublemayonese">
-                                  <span class="checkbox__span"></span>
-                                  С 2-х майонезом
+                                 <input type="checkbox" class="check" data-extra="doublemayonese">
+                                 <span class="checkbox__span"></span>
+                                 С 2-х майонезом
                               </label>
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="doublecheese">
-                                  <span class="checkbox__span"></span>
-                                  С 2-х сыром
+                                 <input type="checkbox" class="check" data-extra="doublecheese">
+                                 <span class="checkbox__span"></span>
+                                 С 2-х сыром
                               </label>
-                          </div>
-                          <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                           </div>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
                         </div>
                      </div>
                      <h2>Гамбургер</h2>
-                     <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета,
+                     <p class="burger__description">Свежая хрустящая булочка, листики салата, маринованный огурец с
+                        луком и небольшая котлета,
                         сдобренная майонезом и кетчупом
                      </p>
                   </div>
@@ -106,26 +108,27 @@
                            <p class="price__span"><span>0</span> сум</p>
                            <div class="checkbox">
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="lettuce">
-                                  <span class="checkbox__span"></span>
-                                  Салатный лист
+                                 <input type="checkbox" class="check" data-extra="lettuce">
+                                 <span class="checkbox__span"></span>
+                                 Салатный лист
                               </label>
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="doublemayonese">
-                                  <span class="checkbox__span"></span>
-                                  С 2-х майонезом
+                                 <input type="checkbox" class="check" data-extra="doublemayonese">
+                                 <span class="checkbox__span"></span>
+                                 С 2-х майонезом
                               </label>
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="doublecheese">
-                                  <span class="checkbox__span"></span>
-                                  С 2-х сыром
+                                 <input type="checkbox" class="check" data-extra="doublecheese">
+                                 <span class="checkbox__span"></span>
+                                 С 2-х сыром
                               </label>
-                          </div>
-                          <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                           </div>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
                         </div>
                      </div>
                      <h2>Гамбургер с сыром</h2>
-                     <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета,
+                     <p class="burger__description">Свежая хрустящая булочка, листики салата, маринованный огурец с
+                        луком и небольшая котлета,
                         сдобренная майонезом и кетчупом
                      </p>
                   </div>
@@ -144,26 +147,27 @@
                            <p class="price__span"><span>0</span> сум</p>
                            <div class="checkbox">
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="lettuce">
-                                  <span class="checkbox__span"></span>
-                                  Салатный лист
+                                 <input type="checkbox" class="check" data-extra="lettuce">
+                                 <span class="checkbox__span"></span>
+                                 Салатный лист
                               </label>
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="doublemayonese">
-                                  <span class="checkbox__span"></span>
-                                  С 2-х майонезом
+                                 <input type="checkbox" class="check" data-extra="doublemayonese">
+                                 <span class="checkbox__span"></span>
+                                 С 2-х майонезом
                               </label>
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="doublecheese">
-                                  <span class="checkbox__span"></span>
-                                  С 2-х сыром
+                                 <input type="checkbox" class="check" data-extra="doublecheese">
+                                 <span class="checkbox__span"></span>
+                                 С 2-х сыром
                               </label>
-                          </div>
-                          <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                           </div>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
                         </div>
                      </div>
                      <h2>Гамбургер куриный</h2>
-                     <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета,
+                     <p class="burger__description">Свежая хрустящая булочка, листики салата, маринованный огурец с
+                        луком и небольшая котлета,
                         сдобренная майонезом и кетчупом
                      </p>
                   </div>
@@ -182,26 +186,27 @@
                            <p class="price__span"><span>0</span> сум</p>
                            <div class="checkbox">
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="lettuce">
-                                  <span class="checkbox__span"></span>
-                                  Салатный лист
+                                 <input type="checkbox" class="check" data-extra="lettuce">
+                                 <span class="checkbox__span"></span>
+                                 Салатный лист
                               </label>
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="doublemayonese">
-                                  <span class="checkbox__span"></span>
-                                  С 2-х майонезом
+                                 <input type="checkbox" class="check" data-extra="doublemayonese">
+                                 <span class="checkbox__span"></span>
+                                 С 2-х майонезом
                               </label>
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="doublecheese">
-                                  <span class="checkbox__span"></span>
-                                  С 2-х сыром
+                                 <input type="checkbox" class="check" data-extra="doublecheese">
+                                 <span class="checkbox__span"></span>
+                                 С 2-х сыром
                               </label>
-                          </div>
-                          <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                           </div>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
                         </div>
                      </div>
                      <h2>Сэндвич с говядиной</h2>
-                     <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета,
+                     <p class="burger__description">Свежая хрустящая булочка, листики салата, маринованный огурец с
+                        луком и небольшая котлета,
                         сдобренная майонезом и кетчупом
                      </p>
                   </div>
@@ -220,26 +225,27 @@
                            <p class="price__span"><span>0</span> сум</p>
                            <div class="checkbox">
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="lettuce">
-                                  <span class="checkbox__span"></span>
-                                  Салатный лист
+                                 <input type="checkbox" class="check" data-extra="lettuce">
+                                 <span class="checkbox__span"></span>
+                                 Салатный лист
                               </label>
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="doublemayonese">
-                                  <span class="checkbox__span"></span>
-                                  С 2-х майонезом
+                                 <input type="checkbox" class="check" data-extra="doublemayonese">
+                                 <span class="checkbox__span"></span>
+                                 С 2-х майонезом
                               </label>
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="doublecheese">
-                                  <span class="checkbox__span"></span>
-                                  С 2-х сыром
+                                 <input type="checkbox" class="check" data-extra="doublecheese">
+                                 <span class="checkbox__span"></span>
+                                 С 2-х сыром
                               </label>
-                          </div>
-                          <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                           </div>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
                         </div>
                      </div>
                      <h2>Сэндвич с курицей</h2>
-                     <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета,
+                     <p class="burger__description">Свежая хрустящая булочка, листики салата, маринованный огурец с
+                        луком и небольшая котлета,
                         сдобренная майонезом и кетчупом
                      </p>
                   </div>
@@ -258,28 +264,316 @@
                            <p class="price__span"><span>0</span> сум</p>
                            <div class="checkbox">
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="lettuce">
-                                  <span class="checkbox__span"></span>
-                                  Салатный лист
+                                 <input type="checkbox" class="check" data-extra="lettuce">
+                                 <span class="checkbox__span"></span>
+                                 Салатный лист
                               </label>
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="doublemayonese">
-                                  <span class="checkbox__span"></span>
-                                  С 2-х майонезом
+                                 <input type="checkbox" class="check" data-extra="doublemayonese">
+                                 <span class="checkbox__span"></span>
+                                 С 2-х майонезом
                               </label>
                               <label class="checkbox__label">
-                                  <input type="checkbox" class="check" data-extra="doublecheese">
-                                  <span class="checkbox__span"></span>
-                                  С 2-х сыром
+                                 <input type="checkbox" class="check" data-extra="doublecheese">
+                                 <span class="checkbox__span"></span>
+                                 С 2-х сыром
                               </label>
-                          </div>
-                          <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                           </div>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
                         </div>
                      </div>
                      <h2>Сэндвич с тунцом</h2>
-                     <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета,
+                     <p class="burger__description">Свежая хрустящая булочка, листики салата, маринованный огурец с
+                        луком и небольшая котлета,
                         сдобренная майонезом и кетчупом
                      </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row tabs">
+               <div class="col-4 col-sm-12 col-md-6">
+                  <div class="burger">
+                     <div class="burger-img" id="hotdog">
+                        <img src="images/hotdog.jpg" alt="burger image">
+                        <span class="burger__price">5000</span>
+                        <div class="burger-buttons">
+                           <div class="d-flex">
+                              <span class="count__button" data-symbol="minus"><i class="fas fa-minus"></i></span>
+                              <span class="count">0</span>
+                              <span class="count__button" data-symbol="plus"><i class="fas fa-plus"></i></span>
+                           </div>
+                           <p class="price__span"><span>0</span> сум</p>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                        </div>
+                     </div>
+                     <h2>Хотдог</h2>
+                     <p class="burger__description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, nisi? Molestias, reiciendis
+                        dolorem amet iste corrupti itaque quam nemo nam alias consectetur blanditiis vitae voluptatum
+                        totam quos enim, repudiandae consequuntur.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-4 col-sm-12 col-md-6">
+                  <div class="burger">
+                     <div class="burger-img" id="hotdogcanada">
+                        <img src="images/hotdog.jpg" alt="burger image">
+                        <span class="burger__price">7000</span>
+                        <div class="burger-buttons">
+                           <div class="d-flex">
+                              <span class="count__button" data-symbol="minus"><i class="fas fa-minus"></i></span>
+                              <span class="count">0</span>
+                              <span class="count__button" data-symbol="plus"><i class="fas fa-plus"></i></span>
+                           </div>
+                           <p class="price__span"><span>0</span> сум</p>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                        </div>
+                     </div>
+                     <h2>Хотдог канадский</h2>
+                     <p class="burger__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, qui repellendus repudiandae nisi ex
+                        ipsam delectus pariatur cupiditate sequi explicabo molestiae consequuntur est voluptatibus
+                        fugiat voluptas aspernatur alias, veritatis error.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-4 col-sm-12 col-md-6">
+                  <div class="burger">
+                     <div class="burger-img" id="hotdogroyal">
+                        <img src="images/hotdog.jpg" alt="burger image">
+                        <span class="burger__price">10000</span>
+                        <div class="burger-buttons">
+                           <div class="d-flex">
+                              <span class="count__button" data-symbol="minus"><i class="fas fa-minus"></i></span>
+                              <span class="count">0</span>
+                              <span class="count__button" data-symbol="plus"><i class="fas fa-plus"></i></span>
+                           </div>
+                           <p class="price__span"><span>0</span> сум</p>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                        </div>
+                     </div>
+                     <h2>Хотдог королевский</h2>
+                     <p class="burger__description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis hic quas, suscipit temporibus
+                        delectus aliquid quasi consequatur pariatur voluptas libero quidem ex aliquam magnam explicabo!
+                        Vel sint molestias quo cupiditate!
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row tabs">
+               <div class="col-4 col-sm-12 col-md-6">
+                  <div class="burger">
+                     <div class="burger-img" id="pizzapepperoni">
+                        <img src="images/pizza.jpg" alt="burger image">
+                        <span class="burger__price">40000</span>
+                        <div class="burger-buttons">
+                           <div class="d-flex">
+                              <span class="count__button" data-symbol="minus"><i class="fas fa-minus"></i></span>
+                              <span class="count">0</span>
+                              <span class="count__button" data-symbol="plus"><i class="fas fa-plus"></i></span>
+                           </div>
+                           <p class="price__span"><span>0</span> сум</p>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                        </div>
+                     </div>
+                     <h2>Пицца Пепперони</h2>
+                     <p class="burger__description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, nisi? Molestias, reiciendis
+                        dolorem amet iste corrupti itaque quam nemo nam alias consectetur blanditiis vitae voluptatum
+                        totam quos enim, repudiandae consequuntur.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-4 col-sm-12 col-md-6">
+                  <div class="burger">
+                     <div class="burger-img" id="pizzadiabolo">
+                        <img src="images/pizza.jpg" alt="burger image">
+                        <span class="burger__price">47000</span>
+                        <div class="burger-buttons">
+                           <div class="d-flex">
+                              <span class="count__button" data-symbol="minus"><i class="fas fa-minus"></i></span>
+                              <span class="count">0</span>
+                              <span class="count__button" data-symbol="plus"><i class="fas fa-plus"></i></span>
+                           </div>
+                           <p class="price__span"><span>0</span> сум</p>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                        </div>
+                     </div>
+                     <h2>Пицца Диаболо</h2>
+                     <p class="burger__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, qui repellendus repudiandae nisi ex
+                        ipsam delectus pariatur cupiditate sequi explicabo molestiae consequuntur est voluptatibus
+                        fugiat voluptas aspernatur alias, veritatis error.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-4 col-sm-12 col-md-6">
+                  <div class="burger">
+                     <div class="burger-img" id="pizzafourcheese">
+                        <img src="images/pizza.jpg" alt="burger image">
+                        <span class="burger__price">45000</span>
+                        <div class="burger-buttons">
+                           <div class="d-flex">
+                              <span class="count__button" data-symbol="minus"><i class="fas fa-minus"></i></span>
+                              <span class="count">0</span>
+                              <span class="count__button" data-symbol="plus"><i class="fas fa-plus"></i></span>
+                           </div>
+                           <p class="price__span"><span>0</span> сум</p>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                        </div>
+                     </div>
+                     <h2>Пицца 4 сыра</h2>
+                     <p class="burger__description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis hic quas, suscipit temporibus
+                        delectus aliquid quasi consequatur pariatur voluptas libero quidem ex aliquam magnam explicabo!
+                        Vel sint molestias quo cupiditate!
+                     </p>
+                  </div>
+               </div>
+               <div class="col-4 col-sm-12 col-md-6">
+                  <div class="burger">
+                     <div class="burger-img" id="pizzahawaii">
+                        <img src="images/pizza.jpg" alt="burger image">
+                        <span class="burger__price">48000</span>
+                        <div class="burger-buttons">
+                           <div class="d-flex">
+                              <span class="count__button" data-symbol="minus"><i class="fas fa-minus"></i></span>
+                              <span class="count">0</span>
+                              <span class="count__button" data-symbol="plus"><i class="fas fa-plus"></i></span>
+                           </div>
+                           <p class="price__span"><span>0</span> сум</p>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                        </div>
+                     </div>
+                     <h2>Пицца гавайская</h2>
+                     <p class="burger__description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis hic quas, suscipit temporibus
+                        delectus aliquid quasi consequatur pariatur voluptas libero quidem ex aliquam magnam explicabo!
+                        Vel sint molestias quo cupiditate!
+                     </p>
+                  </div>
+               </div>
+               <div class="col-4 col-sm-12 col-md-6">
+                  <div class="burger">
+                     <div class="burger-img" id="pizzavegan">
+                        <img src="images/pizza.jpg" alt="burger image">
+                        <span class="burger__price">50000</span>
+                        <div class="burger-buttons">
+                           <div class="d-flex">
+                              <span class="count__button" data-symbol="minus"><i class="fas fa-minus"></i></span>
+                              <span class="count">0</span>
+                              <span class="count__button" data-symbol="plus"><i class="fas fa-plus"></i></span>
+                           </div>
+                           <p class="price__span"><span>0</span> сум</p>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                        </div>
+                     </div>
+                     <h2>Пицца Вегетарианская</h2>
+                     <p class="burger__description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis hic quas, suscipit temporibus
+                        delectus aliquid quasi consequatur pariatur voluptas libero quidem ex aliquam magnam explicabo!
+                        Vel sint molestias quo cupiditate!
+                     </p>
+                  </div>
+               </div>
+               <div class="col-4 col-sm-12 col-md-6">
+                  <div class="burger">
+                     <div class="burger-img" id="pizzacombo">
+                        <img src="images/pizza.jpg" alt="burger image">
+                        <span class="burger__price">55000</span>
+                        <div class="burger-buttons">
+                           <div class="d-flex">
+                              <span class="count__button" data-symbol="minus"><i class="fas fa-minus"></i></span>
+                              <span class="count">0</span>
+                              <span class="count__button" data-symbol="plus"><i class="fas fa-plus"></i></span>
+                           </div>
+                           <p class="price__span"><span>0</span> сум</p>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                        </div>
+                     </div>
+                     <h2>Пицца Комбо</h2>
+                     <p class="burger__description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis hic quas, suscipit temporibus
+                        delectus aliquid quasi consequatur pariatur voluptas libero quidem ex aliquam magnam explicabo!
+                        Vel sint molestias quo cupiditate!
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row tabs">
+               <div class="col-4 col-sm-12 col-md-6">
+                  <div class="burger">
+                     <div class="burger-img" id="colahalf">
+                        <img src="images/soda.jpg" alt="burger image">
+                        <span class="burger__price">5000</span>
+                        <div class="burger-buttons">
+                           <div class="d-flex">
+                              <span class="count__button" data-symbol="minus"><i class="fas fa-minus"></i></span>
+                              <span class="count">0</span>
+                              <span class="count__button" data-symbol="plus"><i class="fas fa-plus"></i></span>
+                           </div>
+                           <p class="price__span"><span>0</span> сум</p>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                        </div>
+                     </div>
+                     <h2>Рандом Газировка 0.5л</h2>
+                  </div>
+               </div>
+               <div class="col-4 col-sm-12 col-md-6">
+                  <div class="burger">
+                     <div class="burger-img" id="colaliter">
+                        <img src="images/soda.jpg" alt="burger image">
+                        <span class="burger__price">10000</span>
+                        <div class="burger-buttons">
+                           <div class="d-flex">
+                              <span class="count__button" data-symbol="minus"><i class="fas fa-minus"></i></span>
+                              <span class="count">0</span>
+                              <span class="count__button" data-symbol="plus"><i class="fas fa-plus"></i></span>
+                           </div>
+                           <p class="price__span"><span>0</span> сум</p>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                        </div>
+                     </div>
+                     <h2>Рандом газировка 1л</h2>
+                  </div>
+               </div>
+               <div class="col-4 col-sm-12 col-md-6">
+                  <div class="burger">
+                     <div class="burger-img" id="colaliterandahalf">
+                        <img src="images/soda.jpg" alt="burger image">
+                        <span class="burger__price">15000</span>
+                        <div class="burger-buttons">
+                           <div class="d-flex">
+                              <span class="count__button" data-symbol="minus"><i class="fas fa-minus"></i></span>
+                              <span class="count">0</span>
+                              <span class="count__button" data-symbol="plus"><i class="fas fa-plus"></i></span>
+                           </div>
+                           <p class="price__span"><span>0</span> сум</p>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                        </div>
+                     </div>
+                     <h2>Рандом газировка 1.5л</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row tabs">
+               <div class="col-4 col-sm-12 col-md-6">
+                  <div class="burger">
+                     <div class="burger-img" id="juice">
+                        <img src="images/juice.jpg" alt="burger image">
+                        <span class="burger__price">9000</span>
+                        <div class="burger-buttons">
+                           <div class="d-flex">
+                              <span class="count__button" data-symbol="minus"><i class="fas fa-minus"></i></span>
+                              <span class="count">0</span>
+                              <span class="count__button" data-symbol="plus"><i class="fas fa-plus"></i></span>
+                           </div>
+                           <p class="price__span"><span>0</span> сум</p>
+                           <p class="kcall__span">Содержит <span>0</span> калорий</p>
+                        </div>
+                     </div>
+                     <h2>Рандом сок 1л</h2>
                   </div>
                </div>
             </div>
@@ -318,18 +612,18 @@
             <a href="" class="logo">street88</a>
             <a href="tel:+998999999999" class="phone">+998 99 999 99 99</a>
          </div>
-            <ul class="d-flex justify-content-center justify-content-md-around">
-               <li><a href="" class="m-0"><i class="fal fa-burger-soda"></i></a></li>
-               <li><a href="" class="m-0"><i class="fal fa-book-user"></i></a></li>
-               <li><a href="" class="m-0"><i class="fal fa-address-book"></i></a></li>
-               <li><a href="" class="m-0"><i class="fab fa-instagram"></i></a></li>
-               <li><a href="" class="m-0"><i class="fab fa-facebook"></i></a></li>
-               <li><a href="" class="m-0"><i class="fab fa-telegram"></i></a></li>
-            </ul>
+         <ul class="d-flex justify-content-center justify-content-md-around">
+            <li><a href="" class="m-0"><i class="fal fa-burger-soda"></i></a></li>
+            <li><a href="" class="m-0"><i class="fal fa-book-user"></i></a></li>
+            <li><a href="" class="m-0"><i class="fal fa-address-book"></i></a></li>
+            <li><a href="" class="m-0"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="" class="m-0"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="" class="m-0"><i class="fab fa-telegram"></i></a></li>
+         </ul>
          <p>Сайт разработан в целях обучения © PROWEB 2019</p>
       </div>
    </footer>
-<script src="scripts/script.js"></script>
+   <script src="scripts/script.js"></script>
 </body>
 
 </html>
