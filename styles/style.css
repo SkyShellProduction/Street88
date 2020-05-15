@@ -112,6 +112,9 @@ header {
    background-size: cover;
    position: relative;
 }
+.header-nav{
+   z-index: 2;
+}
 #check{
    display: none;
 }
@@ -124,6 +127,7 @@ header {
 }
 header .container {
    height: 100%;
+   position: relative;
 }
 .receipt{
    position: absolute;
@@ -140,6 +144,7 @@ header .container {
    text-align: center;
    flex-direction: column;
    z-index: 1000;
+   transition: 1s;
 }
 .receipt-out{
    margin-top: 25px;
@@ -245,7 +250,8 @@ nav ul li a span {
    display: none;
 }
 .tabs.active{
-  display: flex;
+   display: flex;
+   animation: display 1s;
 }
 
 .burger h2 {
@@ -575,4 +581,13 @@ footer p {
   
 
 
+}
+
+@keyframes display{
+   0%{
+      transform: scale(0);
+   } 
+   100%{
+      transform: scale(1);
+   } 
 }

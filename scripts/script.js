@@ -335,7 +335,7 @@ busket.addEventListener('click', function(e){
     totalName += `<br>${food.name}<br>`;
  }
  receiptOut.innerHTML = `Ваш заказ:<br>${totalName}<br>Калорийность: ${totalKcall} ккал<br>Общая стоимость: ${totalPrice} сумм`;
- setTimeout(function (){receipt.style = 'top: 0';}, 300);
+ receipt.style = 'top: 0';
 let amount = document.querySelectorAll('.count'),
 kcall = document.querySelectorAll('.kcall__span span'),
 price = document.querySelectorAll('.price__span span');
